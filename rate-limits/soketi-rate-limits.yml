@@ -5,31 +5,40 @@ provider: Soketi
 providerId: soketi
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
-- Realtime
-- WebSockets
-- Open Source
-- Pusher Protocol
-- Self-Host
-- Rate Limiting
-- Quotas
-- Throttling
-description: Placeholder rate-limit artifact for Soketi. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+  - Realtime
+  - Open Source
+  - Rate Limiting
+description: >-
+  Soketi is configurable - rate limits are set by the operator at deploy time via app
+  configuration. Common per-app caps include max client events per second, max read events per
+  second, max backend events per second, max channels, and max presence members. There are no
+  SaaS-imposed limits.
 sources:
-- https://soketi.app/
+  - https://docs.soketi.app/
+  - https://github.com/soketi/soketi/blob/master/src/options.ts
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  - name: max_client_events_per_second (config)
+    scope: app
+    metric: events_per_second
+    limit: -1
+    notes: Configured per app at deploy time (e.g. SOKETI_DEFAULT_APP_MAX_CLIENT_EVENTS_PER_SECOND).
+  - name: max_backend_events_per_second (config)
+    scope: app
+    metric: events_per_second
+    limit: -1
+    notes: Server-side publish rate cap.
+  - name: max_read_requests_per_second (config)
+    scope: app
+    metric: requests_per_second
+    limit: -1
+    notes: REST read API rate cap.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  - name: Operator-controlled
+    description: Limits are set by the operator; tune for the underlying VM and Redis cluster.
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com

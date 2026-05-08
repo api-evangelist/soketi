@@ -1,9 +1,7 @@
 aid: soketi
 url: https://raw.githubusercontent.com/api-evangelist/soketi/refs/heads/main/apis.yml
 name: Soketi
-x-type: company
-description: >-
-  Soketi is an open-source self-hosted WebSocket server compatible with the Pusher protocol. Drop-in replacement for Pusher Channels.
+x-type: open-source
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Realtime
@@ -11,13 +9,55 @@ tags:
   - Open Source
   - Pusher Protocol
   - Self-Host
+  - Drop-in
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+description: >-
+  Soketi is a next-gen, Pusher-compatible, open-source WebSocket server. It implements the
+  Pusher protocol so existing Pusher SDKs and applications can drop-in replace Pusher Channels
+  with self-hosted Soketi. Written in Node/TypeScript with Rust adapter; deployed via npm,
+  Docker, Kubernetes, or systemd. Open source under MIT license.
+apis:
+  - aid: soketi:pusher-compatible-api
+    name: Soketi Pusher-Compatible API
+    tags:
+      - WebSocket
+      - Pusher Protocol
+      - Pub/Sub
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://your-soketi-host:6001
+    humanURL: https://docs.soketi.app/
+    description: >-
+      Implements the Pusher protocol (channels, private channels, presence channels, encrypted
+      channels) for drop-in compatibility with Pusher client SDKs. Server-side publish via REST,
+      client-side subscribe via WebSocket.
+    properties:
+      - type: Documentation
+        url: https://docs.soketi.app/
+      - type: GitHub
+        url: https://github.com/soketi/soketi
+      - type: License
+        url: https://github.com/soketi/soketi/blob/master/LICENSE
+    x-features:
+      - Drop-in replacement for Pusher Channels
+      - Public, private, presence, encrypted channels
+      - Webhooks
+      - Horizontal scaling via Redis adapter
+      - npm, Docker, Kubernetes deployment
+    x-use-cases:
+      - Self-host Pusher-compatible realtime
+      - Cost optimization vs SaaS Pusher
+      - Edge / on-prem realtime
 common:
-  - type: Website
+  - type: Portal
     url: https://soketi.app/
+  - type: Documentation
+    url: https://docs.soketi.app/
+  - type: GitHub
+    url: https://github.com/soketi/soketi
+  - type: License
+    url: https://github.com/soketi/soketi/blob/master/LICENSE
   - type: Plans
     url: plans/soketi-plans-pricing.yml
   - type: RateLimits
