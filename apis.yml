@@ -1,0 +1,29 @@
+aid: soketi
+url: https://raw.githubusercontent.com/api-evangelist/soketi/refs/heads/main/apis.yml
+name: Soketi
+x-type: company
+description: >-
+  Soketi is an open-source self-hosted WebSocket server compatible with the Pusher protocol. Drop-in replacement for Pusher Channels.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Realtime
+  - WebSockets
+  - Open Source
+  - Pusher Protocol
+  - Self-Host
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://soketi.app/
+  - type: Plans
+    url: plans/soketi-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/soketi-rate-limits.yml
+  - type: FinOps
+    url: finops/soketi-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
