@@ -50,6 +50,8 @@ apis:
       - Cost optimization vs SaaS Pusher
       - Edge / on-prem realtime
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/soketi
   - type: Portal
     url: https://soketi.app/
   - type: Documentation
