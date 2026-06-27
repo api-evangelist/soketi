@@ -66,7 +66,7 @@ common:
     url: rate-limits/soketi-rate-limits.yml
   - type: FinOps
     url: finops/soketi-finops.yml
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.soketi.app/llms.txt
 maintainers:
   - FN: Kin Lane
