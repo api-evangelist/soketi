@@ -50,6 +50,10 @@ apis:
       - Cost optimization vs SaaS Pusher
       - Edge / on-prem realtime
 common:
+  - type: VulnerabilityDisclosure
+    url: security/soketi-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/soketi-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/soketi
   - type: Portal
