@@ -24,7 +24,7 @@ tags:
   - Drop-in
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Soketi is a next-gen, Pusher-compatible, open-source WebSocket server. It implements the
   Pusher protocol so existing Pusher SDKs and applications can drop-in replace Pusher Channels
