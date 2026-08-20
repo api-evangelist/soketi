@@ -16,6 +16,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/soketi.png
 tags:
+  - Real-Time
+  - WebSockets
+  - Open-Source
+  - Pusher Protocol
+  - Self-Host
+  - Drop-in
+tags_raw:
   - Realtime
   - WebSockets
   - Open Source
@@ -34,6 +41,10 @@ apis:
   - aid: soketi:pusher-compatible-api
     name: Soketi Pusher-Compatible API
     tags:
+      - WebSocket
+      - Pusher Protocol
+      - Pub-Sub
+    tags_raw:
       - WebSocket
       - Pusher Protocol
       - Pub/Sub
