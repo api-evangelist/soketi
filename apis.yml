@@ -84,6 +84,8 @@ apis:
       - Cost optimization vs SaaS Pusher
       - Edge / on-prem realtime
 common:
+  - type: Website
+    url: https://soketi.app/
   - type: VulnerabilityDisclosure
     url: security/soketi-vulnerability-disclosure.yml
   - type: DomainSecurity
