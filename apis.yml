@@ -28,7 +28,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/soketi.png
 tags:
   - Real-Time
-  - WebSockets
+  - WebSocket
   - Open-Source
   - Pusher Protocol
   - Self-Host
