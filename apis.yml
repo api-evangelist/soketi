@@ -3,15 +3,21 @@ url: https://raw.githubusercontent.com/api-evangelist/soketi/refs/heads/main/api
 name: Soketi
 kind: opensource
 deliveryModel:
-  model: saas
-  open_source: false
+  model: open-core
+  license: AGPL-3.0
+  license_evidence:
+    repo: soketi/soketi
+    spdx: AGPL-3.0
+    stars: 5635
+  open_source: true
   commercial: true
   callable_host: false
-  label: Hosted service · you call their endpoint
+  label: Open core · an OSS project plus a commercial hosted product
   confidence: medium
   source:
   - pricing
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -29,7 +35,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/soketi.png
 tags:
   - Real-Time
   - WebSocket
-  - Open-Source
+  - Open Source
   - Pusher Protocol
   - Self-Host
   - Drop-in
@@ -40,6 +46,7 @@ tags_raw:
   - Pusher Protocol
   - Self-Host
   - Drop-in
+  - Open-Source
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'
