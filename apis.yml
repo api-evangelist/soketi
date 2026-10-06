@@ -48,7 +48,7 @@ tags_raw:
   - Drop-in
   - Open-Source
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 description: >-
   Soketi is a next-gen, Pusher-compatible, open-source WebSocket server. It implements the
@@ -91,6 +91,8 @@ apis:
       - Cost optimization vs SaaS Pusher
       - Edge / on-prem realtime
 common:
+  - url: https://soketi.app/blog/
+    type: Blog
   - type: Website
     url: https://soketi.app/
   - type: VulnerabilityDisclosure
