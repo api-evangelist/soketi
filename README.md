@@ -1,4 +1,4 @@
-# Soketi (soketi)
+# Soketi
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,36 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Soketi is a next-gen, Pusher-compatible, open-source WebSocket server. Drop-in replacement for Pusher Channels via the Pusher protocol. MIT-licensed.
+Soketi is a next-gen, Pusher-compatible, open-source WebSocket server. It implements the Pusher protocol so existing Pusher SDKs and applications can drop-in replace Pusher Channels with self-hosted Soketi. Written in Node/TypeScript with Rust adapter; deployed via npm, Docker, Kubernetes, or systemd. Open source under MIT license.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/soketi/refs/heads/main/apis.yml)
+**Areas:** Real-Time · WebSocket · Open Source · Pusher Protocol · Self-Host · Drop-in
 
-## Type
-- **x-type:** open-source
+## Soketi on APIs.io
 
-## Tags
-- Realtime, WebSockets, Open Source, Pusher Protocol, Self-Host, Drop-in
+Everything profiled for Soketi is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/soketi/](https://apis.io/providers/soketi/)** — or go straight to one of the APIs or properties below.
 
-## APIs
-- **Soketi Pusher-Compatible API** (`https://your-soketi-host:6001`) - operator-deployed
+### APIs (1)
 
-## Notes on OpenAPI
-Soketi implements the Pusher protocol; canonical reference is the Pusher protocol spec rather than a Soketi-specific OpenAPI file.
+- [Soketi Pusher-Compatible API](https://apis.io/apis/soketi/pusher-compatible-api/) — Implements the Pusher protocol (channels, private channels, presence channels, encrypted channels) for drop-in compatibility with Pusher client SDKs.…
 
-## Timestamps
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+### Published properties
 
-## Common Properties
-- [Portal](https://soketi.app/)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Soketi Domain Security](https://apis.io/security/soketi/soketi-domain-security/)
+- [Soketi Vulnerability Disclosure](https://apis.io/security/soketi/soketi-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Soketi Plans Pricing](https://apis.io/plans/soketi/soketi-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Soketi Rate Limits](https://apis.io/rate-limits/soketi/soketi-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Soketi Finops](https://apis.io/finops/soketi/soketi-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://soketi.app/)
 - [Documentation](https://docs.soketi.app/)
-- [GitHub](https://github.com/soketi/soketi)
-- [License](https://github.com/soketi/soketi/blob/master/LICENSE)
-- [Plans](plans/soketi-plans-pricing.yml) - reconciled (open-source)
-- [RateLimits](rate-limits/soketi-rate-limits.yml) - reconciled (operator-controlled)
-- [FinOps](finops/soketi-finops.yml) - reconciled FOCUS-aligned
+- [Blog](https://soketi.app/blog/)
 
-## Maintainers
-**FN:** Kin Lane
+## API Evangelist rating
 
-**Email:** kin@apievangelist.com
+**Kin Score 13.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/soketi/](https://apis.io/providers/soketi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Soketi: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/soketi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
